@@ -6,6 +6,8 @@ A task list so you can plan your day without forgetting any of your responsibili
 
 [Tasks List](https://r0galkj.github.io/Todo-list-react/)
 
+![screen](https://raw.githubusercontent.com/R0galKJ/Todo-list-react/main/public/scr.png)
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
