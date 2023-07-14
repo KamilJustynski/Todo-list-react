@@ -38,5 +38,6 @@
 
 .container__button:disabled {
     color: #ccc;
+    transition: .2s;
     cursor: auto;
 }
