@@ -1,12 +1,22 @@
 # Task list
 
-A task list so you can plan your day without forgetting any of your responsibilities!
+A task list so you can do plan your day without forgetting any of your responsibilities!
 
 ## Demo
 
 [Tasks List](https://r0galkj.github.io/Todo-list-react/)
 
 ![screen](https://raw.githubusercontent.com/R0galKJ/Todo-list-react/main/public/scr.png)
+
+## Technology
+
+- HTML
+- CSS
+- JavaScript
+- BEM
+- React
+
+![icon](https://cdn-icons-png.flaticon.com/128/174/174854.png) ![icon](https://cdn-icons-png.flaticon.com/128/732/732190.png) ![icon](https://cdn-icons-png.flaticon.com/128/5968/5968292.png) ![icon](https://cdn-icons-png.flaticon.com/128/919/919851.png)
 
 ## Getting Started with Create React App
 
