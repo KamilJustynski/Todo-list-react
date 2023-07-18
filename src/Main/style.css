@@ -4,7 +4,7 @@
     word-break: break-word;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 600px) {
     .main {
         margin: 20px
     }
