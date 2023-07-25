@@ -1,16 +1,16 @@
 import React from "react";
-import { ButtonsContainer, Key } from "./styled";
+import { ButtonsContainer, Btn } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
   <ButtonsContainer>
     {tasks.length > 0 && (
       <>
-        <Key onClick={toggleHideDone}>
+        <Btn onClick={toggleHideDone}>
           {hideDone ? "Pokaż" : "Ukryj"} ukończone
-        </Key>
-        <Key disabled={tasks.every(({ done }) => done)} onClick={setAllDone}>
+        </Btn>
+        <Btn disabled={tasks.every(({ done }) => done)} onClick={setAllDone}>
           Ukończ wszystkie
-        </Key>
+        </Btn>
       </>
     )}
   </ButtonsContainer>

@@ -13,7 +13,7 @@ export const ButtonsContainer = styled.div`
   }
 `;
 
-export const Key = styled.button`
+export const Btn = styled.button`
   border: none;
   background-color: white;
   color: teal;
