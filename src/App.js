@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useTasks } from "./useTasks";
 import Form from "./Form";
 import Tasks from "./Tasks";
@@ -8,7 +8,6 @@ import Section from "./Section";
 import Main from "./Main";
 
 function App() {
-
   const {
     tasks,
     removeTask,
@@ -16,9 +15,8 @@ function App() {
     setAllDone,
     addNewTask,
     hideDone,
-    toggleHideDone
+    toggleHideDone,
   } = useTasks();
-
 
   return (
     <Main>
