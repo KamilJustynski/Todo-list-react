@@ -8,7 +8,6 @@ import Section from "./Section";
 import Main from "./Main";
 
 function App() {
-  const [hideDone, setHideDone] = useState(false);
 
   const {
     tasks,
@@ -16,11 +15,10 @@ function App() {
     toggleTaskDone,
     setAllDone,
     addNewTask,
+    hideDone,
+    toggleHideDone
   } = useTasks();
 
-  const toggleHideDone = () => {
-    setHideDone((hideDone) => !hideDone);
-  };
 
   return (
     <Main>
