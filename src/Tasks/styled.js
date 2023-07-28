@@ -12,7 +12,7 @@ export const Item = styled.li`
   grid-gap: 10px;
   padding: 15px;
   align-items: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid ${({ theme }) => theme.color.mediumGray};
 
   ${({ hidden }) =>
     hidden &&
@@ -32,16 +32,16 @@ export const Content = styled.span`
 export const Button = styled.button`
   width: 35px;
   height: 35px;
-  color: white;
+  color: ${({ theme }) => theme.color.white};
   border: none;
 
   ${({ toggleDone }) =>
     toggleDone &&
     css`
-      background-color: green;
+      background-color: ${({ theme }) => theme.color.green};
 
       &:hover {
-        background-color: hsl(120, 100%, 30%);
+        background-color: ${({ theme }) => theme.color.mediumGreen};
         transition: 0.2s;
         cursor: pointer;
       }
@@ -50,10 +50,10 @@ export const Button = styled.button`
   ${({ remove }) =>
     remove &&
     css`
-      background-color: red;
+      background-color: ${({ theme }) => theme.color.red};
 
       &:hover {
-        background-color: hsl(0, 100%, 65%);
+        background-color: ${({ theme }) => theme.color.mediumRed};
         transition: 0.2s;
         cursor: pointer;
       }

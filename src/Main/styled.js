@@ -5,7 +5,7 @@ export const MainContainer = styled.main`
   max-width: 1000px;
   word-break: break-word;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     margin: 20px;
   }
 `;

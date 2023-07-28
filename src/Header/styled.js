@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainHeader = styled.header`
-  @media (max-width: 600px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: flex;
     justify-content: center;
   }
