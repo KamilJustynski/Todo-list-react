@@ -10,7 +10,7 @@ export const SectionBox = styled.div`
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid ${({ theme }) => theme.color.mediumGray};
-  padding: 20px;
+  padding-left: 20px;
   margin: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
