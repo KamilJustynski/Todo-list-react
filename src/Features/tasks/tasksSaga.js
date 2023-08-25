@@ -1,5 +1,5 @@
 import {
-  throttle,
+  takeLatest,
   call,
   put,
   select,
@@ -26,6 +26,6 @@ function* saveTasksInLocalStorageHandler() {
 }
 
 export function* tasksSaga() {
-  yield throttle(2000, fetchExampleTasks.type, fetchExampleTasksHandler);
+  yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
   yield takeEvery("*", saveTasksInLocalStorageHandler);
 }
