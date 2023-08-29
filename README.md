@@ -18,6 +18,7 @@ A task list so you can do plan your day without forgetting any of your responsib
 - React hooks
 - Custom hooks
 - Redux Toolkit
+- Redux-saga
 
 ![icon](https://cdn-icons-png.flaticon.com/128/174/174854.png) ![icon](https://cdn-icons-png.flaticon.com/128/732/732190.png) ![icon](https://cdn-icons-png.flaticon.com/128/5968/5968292.png) ![icon](https://cdn-icons-png.flaticon.com/128/919/919851.png)
 
