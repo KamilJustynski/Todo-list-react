@@ -9,4 +9,5 @@ export const MainHeader = styled.header`
 
 export const HeaderTitle = styled.h1`
   justify-content: flex-start;
+  padding-top: 20px;
 `;
