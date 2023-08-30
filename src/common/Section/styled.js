@@ -16,8 +16,14 @@ export const SectionBox = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 20px;
   }
 `;
 
-export const SectionHeader = styled.h2``;
+export const SectionHeader = styled.h2`
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px
+  }
+`;

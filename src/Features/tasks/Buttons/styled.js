@@ -3,11 +3,14 @@ import styled, { css } from "styled-components";
 export const ButtonsContainer = styled.div`
   display: flex;
   gap: 20px;
-  margin: 20px;
+  margin: 10px;
+
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     align-items: center;
     justify-content: center;
+    padding-right: 25px;
+  
   }
 `;
 

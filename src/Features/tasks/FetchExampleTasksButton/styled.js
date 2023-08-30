@@ -5,9 +5,11 @@ export const ButtonsContainer = styled.div`
   gap: 20px;
   margin: 20px;
 
+
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     align-items: center;
     justify-content: center;
+    padding-right: 25px;
   }
 `;
 
