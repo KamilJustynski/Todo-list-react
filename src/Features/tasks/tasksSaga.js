@@ -13,7 +13,7 @@ import { saveTasksInLocalStorage } from "./tasksLocalStorage";
 function* fetchExampleTasksHandler() {
   console.log("Zaczynam pracę...");
   try {
-    delay(1000);
+    delay(2000);
     const exampleTasks = yield call(getExampleTasks);
     yield put(setTasks(exampleTasks));
   } catch {
