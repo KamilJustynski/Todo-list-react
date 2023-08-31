@@ -1,7 +1,8 @@
 import React from "react";
-import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
-import Tasks from "./Features/tasks/Tasks";
-import Author from "./Features/author/Author";
+import { HashRouter, Switch, Route, Redirect, useParams } from "react-router-dom";
+import TasksPage from "./Features/tasks/TasksPage/index"
+import TaskPage from "./Features/tasks/TaskPage/index"
+import AuthorPage from "./Features/author/AuthorPage";
 import { NavList, NavWrapper, NavItem, StyledNavLink } from "./globalStyle";
 
 export default () => (
@@ -18,11 +19,14 @@ export default () => (
     </NavList>
 
     <Switch>
+    <Route path="/zadania/:id">
+        <TaskPage />
+      </Route>
       <Route path="/zadania">
-        <Tasks />
+        <TasksPage />
       </Route>
       <Route path="/autor">
-        <Author />
+        <AuthorPage />
       </Route>
       <Route path="/">
         <Redirect to="/zadania" />

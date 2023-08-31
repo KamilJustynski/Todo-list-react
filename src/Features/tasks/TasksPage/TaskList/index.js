@@ -4,12 +4,16 @@ import { List, Item, Content, Button } from "./styled";
 import {
   toggleTaskDone,
   removeTask,
-  selectTasks,
   selectHideDone,
-} from "../tasksSlice";
+  selectTasksByQuery,
+} from "../../tasksSlice";
+import { Link, useLocation } from "react-router-dom";
 
 const TaskList = () => {
-  const tasks = useSelector(selectTasks);
+  const location = useLocation();
+  const query = new URLSearchParams(location.search).get("szukaj");
+
+  const tasks = useSelector((state) => selectTasksByQuery(state, query));
   const hideDone = useSelector(selectHideDone);
   const dispatch = useDispatch();
 
@@ -20,7 +24,9 @@ const TaskList = () => {
           <Button toggleDone onClick={() => dispatch(toggleTaskDone(task.id))}>
             {task.done ? "✔" : ""}
           </Button>
-          <Content done={task.done}>{task.content}</Content>
+          <Content done={task.done}>
+            <Link to={`/zadania/${task.id}`}>{task.content}</Link>
+          </Content>
           <Button remove onClick={() => dispatch(removeTask(task.id))}>
             🗑
           </Button>

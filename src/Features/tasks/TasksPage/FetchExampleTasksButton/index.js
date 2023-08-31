@@ -1,5 +1,5 @@
 import React from "react";
-import { fetchExampleTasks } from "../tasksSlice";
+import { fetchExampleTasks } from "../../tasksSlice";
 import { ButtonsContainer, Button } from "./styled";
 import { useDispatch } from "react-redux";
 

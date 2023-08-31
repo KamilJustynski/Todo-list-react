@@ -1,14 +1,15 @@
 import React from "react";
 import Form from "./Form";
 import TaskList from "./TaskList";
-import Header from "../../common/Header";
+import Header from "../../../common/Header";
 import Buttons from "./Buttons";
-import Section from "../../common/Section";
-import Main from "../../common/Main";
+import Section from "../../../common/Section";
+import Main from "../../../common/Main";
 import Search from "./Search";
 import FetchExampleTasksButton from "./FetchExampleTasksButton";
 
-function App() {
+
+function TasksPage() {
   return (
     <Main>
       <Header title="Lista zadań" />
@@ -17,10 +18,7 @@ function App() {
         extraHeaderContent={<FetchExampleTasksButton />}
         body={<Form />}
       />
-      <Section
-        title="Szukaj zadania"
-        body={<Search />}
-      />
+      <Section title="Wyszukiwarka" body={<Search />} />
       <Section
         title="Lista zadań"
         body={<TaskList />}
@@ -30,4 +28,4 @@ function App() {
   );
 }
 
-export default App;
+export default TasksPage;
