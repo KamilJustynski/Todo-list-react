@@ -20,7 +20,7 @@ const Search = () => {
       searchParams.set("szukaj", target.value);
     }
 
-    history.push(`${location.pathname}?${searchParams.toString()} `);
+    history.push(`${location.pathname}?${searchParams.toString()}`);
   };
 
   return (
