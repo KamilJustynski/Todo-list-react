@@ -2,25 +2,19 @@ import React from "react";
 import { SearchContainer } from "./styled";
 import { FormInput } from "../Form/styled";
 import {
-  useHistory,
-  useLocation,
-} from "react-router-dom";
+  useQueryParameter,
+  useReplaceQueryParameter,
+} from "../../queryParameters";
 
 const Search = () => {
-  const location = useLocation();
-  const history = useHistory();
-  const query = new URLSearchParams(location.search).get("szukaj");
+  const query = useQueryParameter("szukaj");
+  const replaceQueryParameter = useReplaceQueryParameter();
 
   const onInputChange = ({ target }) => {
-    const searchParams = new URLSearchParams(location.search);
-
-    if (target.value.trim() === "") {
-      searchParams.delete("szukaj");
-    } else {
-      searchParams.set("szukaj", target.value);
-    }
-
-    history.push(`${location.pathname}?${searchParams.toString()}`);
+    replaceQueryParameter({
+      key: "szukaj",
+      value: target.value.trim() !== "" ? target.value : undefined,
+    });
   };
 
   return (

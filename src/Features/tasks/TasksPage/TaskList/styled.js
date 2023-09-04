@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
   padding: 30px 10px;
@@ -58,4 +59,23 @@ export const Button = styled.button`
         cursor: pointer;
       }
     `}
+`;
+
+export const ListLink = styled(Link)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.color.teal};
+  cursor: pointer;
+
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      color: ${({ theme }) => theme.color.gray};
+      transition: 0.2s;
+      cursor: auto;
+    `}
+
+  &:hover {
+    color: ${({ theme }) => theme.color.lightTeal};
+    transition: 0.2s;
+  }
 `;
